@@ -17,7 +17,7 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
             Student poulina = new Student();
-            poulina.familia = "Novoseltseva";
+            poulina.surname = "Novoseltseva";
             poulina.data = "12.10.2003";
             poulina.nomer = 621;
             poulina.progress = new[] { 4, 3, 5, 4, 3 };
@@ -32,7 +32,7 @@ namespace ConsoleApp1
                 switch (a)
                 {
                     case "1":
-                        poulina.writeInConsoleInfo(poulina.familia, poulina.data, poulina.nomer,
+                        poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.nomer,
                             poulina.progress);
                         
                         break;
@@ -44,8 +44,8 @@ namespace ConsoleApp1
                             {
                                 case "1":
                                     Console.WriteLine("Введите новую фамилию");
-                                    string newfamilia = Console.ReadLine();
-                                    poulina.familia = newfamilia;
+                                    string newsurname = Console.ReadLine();
+                                    poulina.surname = newsurname;
                                     break;
                                 case "2":
                                     Console.WriteLine("Введите новую дату дня рождения");
@@ -58,7 +58,7 @@ namespace ConsoleApp1
                                     poulina.nomer = newnomer;
                                     break;
                                 case "0":
-                                    poulina.writeInConsoleInfo(poulina.familia, poulina.data, poulina.nomer,
+                                    poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.nomer,
                                         poulina.progress);
                                     
                                     break;
