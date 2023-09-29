@@ -23,12 +23,12 @@ namespace _2._3
             number2 = Convert.ToInt32(Console.ReadLine());
         }
 
-        public void GetSumm()
+        public void GetSum()
         {
             Console.WriteLine(number1 + number2);
         }
 
-        public void GetSravnenie()
+        public void GetComparison()
         {
             if (number1 > number2)
             {
