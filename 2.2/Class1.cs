@@ -8,12 +8,12 @@ namespace _2._2
 {
     class Train
     {
-        public string pynkt, time;
-        public int nomer;
+        public string point, time;
+        public int nomber;
 
-        public void writeInConsoleInfo(string pynkt, string time, int nomer)
+        public void writeInConsoleInfo(string point, string time, int nomber)
         {
-            Console.WriteLine("Номер поезда: {0}\nВремя: {1}\nПункт: {2}", nomer, time, pynkt);
+            Console.WriteLine("Номер поезда: {0}\nВремя: {1}\nПункт: {2}", nomber, time, point);
         }
     }
 }
