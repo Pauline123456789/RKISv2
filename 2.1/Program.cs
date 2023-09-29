@@ -19,7 +19,7 @@ namespace ConsoleApp1
             Student poulina = new Student();
             poulina.surname = "Novoseltseva";
             poulina.data = "12.10.2003";
-            poulina.nomer = 621;
+            poulina.number = 621;
             poulina.progress = new[] { 4, 3, 5, 4, 3 };
 
             
@@ -32,7 +32,7 @@ namespace ConsoleApp1
                 switch (a)
                 {
                     case "1":
-                        poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.nomer,
+                        poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.number,
                             poulina.progress);
                         
                         break;
@@ -54,11 +54,11 @@ namespace ConsoleApp1
                                     break;
                                 case "3":
                                     Console.WriteLine("Введите новую группу");
-                                    int newnomer = Convert.ToInt32(Console.ReadLine());
-                                    poulina.nomer = newnomer;
+                                    int newnumber = Convert.ToInt32(Console.ReadLine());
+                                    poulina.number = newnumber;
                                     break;
                                 case "0":
-                                    poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.nomer,
+                                    poulina.writeInConsoleInfo(poulina.surname, poulina.data, poulina.number,
                                         poulina.progress);
                                     
                                     break;
