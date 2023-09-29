@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace _2._5
 {
-    class proga
+    class program
     {
         private string name;
         private string surname;
 
-        public proga() { name = "Неизвестно"; surname = "Неизвестно"; }
-        public proga(string name, string surname) { this.name = name; this.surname = surname; }
+        public program() { name = "Неизвестно"; surname = "Неизвестно"; }
+        public program(string name, string surname) { this.name = name; this.surname = surname; }
 
         public void GetPrint()
         {
             Console.WriteLine($"Имя: {name}  Фамилия: {surname}");
         }
 
-        ~proga()
+        ~program()
         {
             Console.WriteLine($"{name} has deleted");
         }
