@@ -34,10 +34,10 @@ namespace ConsoleApp1
                         Number.GetPrint();
                         break;
                     case "4":
-                        Number.plus();
+                        Number.add();
                         break;
                     case "5":
-                        Number.minus();
+                        Number.sub();
                         break;
 
                 }
