@@ -14,10 +14,10 @@ namespace _2._5
     {
         static void Main(string[] args)
         {
-            proga men1 = new proga("Paulina","Novoseltseva");
-            proga men2 = new proga();
-            men1.GetPrint();
-            men2.GetPrint();
+            program men_1 = new program("Paulina","Novoseltseva");
+            program men_2 = new program();
+            men_1.GetPrint();
+            men_2.GetPrint();
 
 
         }
