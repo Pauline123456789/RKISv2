@@ -10,8 +10,8 @@ namespace _4
     {
         static void Main(string[] args)
         {
-            string rim = "XXIV";
-            var rimskiv = new Dictionary<char, int>()
+            string num = "XXIV";
+            var roman = new Dictionary<char, int>()
             {
                 { 'I',1 },
                 { 'V',5 },
@@ -23,22 +23,22 @@ namespace _4
             };
 
             int output = 0;
-            for (int i = 0; i < rim.Length; i++)
+            for (int i = 0; i < num.Length; i++)
             {
-                if (i == rim.Length - 1)
+                if (i == num.Length - 1)
                 {
-                    output += rimskiv[rim[i]];
+                    output += roman[num[i]];
 
 
                 }
-                else if (rimskiv[rim[i]] < rimskiv[rim[i + 1]])
+                else if (roman[num[i]] < roman[num[i + 1]])
                 {
-                    output += rimskiv[rim[i + 1]] - rimskiv[rim[i]];
+                    output += roman[num[i + 1]] - roman[num[i]];
                     i++;
                 }
                 else
                 {
-                    output += rimskiv[rim[i]];
+                    output += roman[num[i]];
                 }
                 
             }
