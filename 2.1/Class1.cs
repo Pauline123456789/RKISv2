@@ -12,9 +12,9 @@ namespace Student_
         public int nomer;
         public int[] progress;
 
-        public void writeInConsoleInfo(string familia, string data, int nomer, int[] progress)
+        public void writeInConsoleInfo(string surname, string data, int nomer, int[] progress)
         {
-            Console.WriteLine("Фамилия: {0}\nДень рождение: {1}\nГруппа: {2}\n", familia, data, nomer);
+            Console.WriteLine("Фамилия: {0}\nДень рождение: {1}\nГруппа: {2}\n", surname, data, nomer);
             Console.WriteLine("Успеваемость:");
             foreach (int i in progress)
             {
