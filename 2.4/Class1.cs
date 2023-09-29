@@ -26,17 +26,17 @@ namespace _2._4
             Console.WriteLine($"Ваше текущее значение: {number}");
 
         }
-        public void writeInConsoleInfo(int scetchik1)
+        public void writeInConsoleInfo(int counter1)
         {
-            Console.WriteLine(scetchik1);
+            Console.WriteLine(counter1);
         }
 
-        public void plus()
+        public void add()
         {
             number++;
         }
 
-        public void minus()
+        public void sub()
         {
             number--;
         }
