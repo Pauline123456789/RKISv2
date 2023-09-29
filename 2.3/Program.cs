@@ -21,7 +21,7 @@ namespace ConsoleApp1
             bool Worker = true;
             while (Worker)
             {
-                Console.WriteLine("Выберите действие:\n 1 - для изменения чисел \n 2 - вывести числа на экранчик \n 3 - для вывода суммы этих чисел \n 4 - для нахождения наибольшего числа \n 5 - для закрытия программы ");
+                Console.WriteLine("Выберите действие:\n 1 - для изменения чисел \n 2 - вывести числа на экран \n 3 - для вывода суммы этих чисел \n 4 - для нахождения наибольшего числа \n 5 - для закрытия программы ");
                 string Str = Console.ReadLine();
                 switch (Str)
                 {
@@ -34,10 +34,10 @@ namespace ConsoleApp1
                         Number.GetPrint();
                         break;
                     case "3":
-                        Number.GetSumm();
+                        Number.GetSum();
                         break;
                     case "4":
-                        Number.GetSravnenie();
+                        Number.GetComparison();
                         break;
                     case "5":
 
