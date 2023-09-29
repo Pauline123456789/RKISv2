@@ -13,38 +13,38 @@ namespace ConsoleApp1
 
         public static void Main(string[] args)
         {
-            Train poezd1 = new Train();
-            poezd1.pynkt = "NOVOSIBIRSK";
-            poezd1.nomer = 1;
-            poezd1.vremia = "15:00";
+            Train t_1 = new Train();
+            t_1.point = "NOVOSIBIRSK";
+            t_1.number = 1;
+            t_1.time = "15:00";
 
-            Train poezd2 = new Train();
-            poezd2.pynkt = "TOMSK";
-            poezd2.nomer = 2;
-            poezd2.vremia = "22:00";
+            Train t_2 = new Train();
+            t_2.point = "TOMSK";
+            t_2.number = 2;
+            t_2.time = "22:00";
 
-            Train poezd3 = new Train();
-            poezd3.pynkt = "OMSK";
-            poezd3.nomer = 3;
-            poezd3.vremia = "21:00";
+            Train t_3 = new Train();
+            t_3.point = "OMSK";
+            t_3.number = 3;
+            t_3.time = "21:00";
 
 
             while (true)
             {
 
                 Console.WriteLine("Введите номер поезда от 1 до 3");
-                string chislo = Console.ReadLine();
+                string num = Console.ReadLine();
 
-                switch (chislo)
+                switch (num)
                 {
                     case "1":
-                        poezd1.writeInConsoleInfo(poezd1.pynkt, poezd1.vremia, poezd1.nomer);
+                        t_1.writeInConsoleInfo(t_1.point, t_1.time, t_1.number);
                         break;
                     case "2":
-                        poezd2.writeInConsoleInfo(poezd2.pynkt, poezd2.vremia, poezd2.nomer);
+                        t_2.writeInConsoleInfo(t_2.point, t_2.time, t_2.number);
                         break;
                     case "3":
-                        poezd3.writeInConsoleInfo(poezd3.pynkt, poezd3.vremia, poezd3.nomer);
+                        t_3.writeInConsoleInfo(t_3.point, t_3.time, t_3.number);
                         break;
                 }
             }
